@@ -1,6 +1,159 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Migyeong Kang</title>
+<style>
+    html {
+        padding-top: 0px;
+        margin-left: 20%;
+        margin-right: 20%;
+        background-color: #ffffff;
+    }
+    div {
+        background-color: #e9f9ff;
+        height: auto;
+    }
+    .column {
+        float: left;
+        width: 50%;
+        margin-top: 10%;
+    }
+    .contact {
+        list-style: none;
+        padding-inline-start: 0;
+        margin-top: 0.5em;
+    }
+    main {
+        background-color: #e9f9ff;
+        height: auto;
+        padding-top: 12%;
+        padding-bottom: 5%;
+        padding-right: 5%;
+        padding-left: 5%;
+        margin-bottom: 10%;
+    }
+    h1 {
+        font-size: 24px;
+        font-weight:normal;
+        margin: 0em;
+        color: #3b6392;
+    }
+    h2 {
+        font-size: 28px;
+        margin: 0;
+        color: #130f49;
+    }
+    text{
+        font-size: 20px;
+        color: #3b6392;
+    }
+    p, li{
+        font-size: 16px;
+        color: #515b66;
+    }
+    p {
+        margin-top: 0.5em;
+    }
+    a {
+        color: #515b66;
+        font-size: 16px;
+    }
+    hr {
+        height: 1px;
+        background-color: #515b66;
+        border: 0;
+    }
+    .migyeong {
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        display: block;
+    }
+    .gitLogo {
+        height: 1em;
+        margin-right: 0.2em;
+    }
+    /* Clear floats after the columns */
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin-top: 50%;
+    }
+
+    /*media*/
+    @media only screen and (max-width: 800px) {
+            .column {
+                width: auto;
+                margin-inline-start: 10%;
+                margin-inline-end: 10%;
+            }
+            img {
+                height: 150px;
+            }
+        }
+</style>
+</head>
 <body>
-<p>I'm hosted with GitHub Pages.</p>
+    <section>
+    <div class="row">
+        <div class="column">
+            <img class="migyeong" src="small.jpg">
+        </div>
+        <div class="column">
+        <h2>Migyeong Kang</h2><br><br><br>
+        <text>Contact</text><br>
+        <ul class="contact">
+            <li>
+                📩 <a href="mailto:gy77@g.skku.edu">gy77@g.skku.edu</a>
+            </li>
+            <li>
+                <img class="gitLogo" src="GitIcon2.png">
+                <a href="https://github.com/gyeong707">github.com/gyeong707</a>
+            </li>
+        </ul>
+        </div>
+    </div>
+    <main>
+        <h1>Research Interests</h1><hr>
+        <ul>
+            <li><strong>Mental Health</strong></li>
+            <br>
+            <li><strong>Natural Language Processing</strong></li>
+            <br>
+        </ul>
+        <h1>Education</h1><hr>
+        <ul>
+        <li><strong>M.S. in Applied Artificial Intelligence</strong></li>
+            <p>Sungkyunkwan University, Republic of Korea
+            (2021.03 - Present)
+            <br>
+            </p>
+            <br>
+        <li><strong>B.S., Statistics</strong></li>
+            <p>Sungshin Women’s University, Republic of Korea
+            (2016.03 - 2021.02)
+            <br>
+            </p>
+            <br>
+        <li><strong>B.S., Computer Software</strong></li>
+            <p>Sungshin Women’s University, Republic of Korea
+            (2017.06 - 2021.02)
+            <br>
+            <br>
+            </p>
+        </ul>
+        <br><h1>Project</h1><hr>
+        <ul>
+
+        <li>Research Associate - Building a mental health data for machine learning and Developing NLP application models,  Electronics and Telecommunications Research Institute (ETRI)</li>
+            <p>(2021.06 - 2021.08)</p>
+        </ul>
+    </main>
+    </section>
 </body>
 </html>
