@@ -7,9 +7,9 @@ redirect_from:
   - /about.html
 ---
 
-Hello! I am **Migyeong Kang**, a Ph.D. candidate in Applied Artificial Intelligence at **Sungkyunkwan University**, advised by [Prof. Jinyoung Han](https://sites.google.com/site/jyhantop/jinyoung-han-ph-d).
+Hello! I am **Migyeong Kang**, a Ph.D. candidate in Applied Artificial Intelligence at **Sungkyunkwan University (SKKU)**, advised by [Prof. Jinyoung Han](https://sites.google.com/site/jyhantop/jinyoung-han-ph-d). I expect to graduate in **February 2027**.
 
-My research focuses on **trustworthy large language models for mental health**, including mental health assessment, counseling dialogue systems, and human–AI alignment.
+My research focuses on using **natural language processing (NLP) to address challenges in mental health**. My work so far has centered on **mental disorder detection using deep learning and large language models**. I aim to explore broader applications in mental health, including **support and counseling**, drawing on **human–computer interaction (HCI) and human–AI alignment**.
 
 I was a Visiting Scholar at Indiana University Bloomington from September 2024 to March 2025, working with [Prof. Haewoon Kwak](https://haewoon.github.io/) and [Prof. Jisun An](https://jisun.me/).
 
