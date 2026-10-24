@@ -1,0 +1,40 @@
+/* Scoped to the full publication list; the homepage keeps its own layout. */
+.publications-page {
+  --pub-accent: #315f77;
+  --pub-muted: #626b73;
+  --pub-line: #dce4e8;
+  --pub-tint: #f2f6f8;
+  .publications-intro > p { margin: 0 0 .75rem; line-height: 1.65; }
+  .publications-resources { display: flex; flex-wrap: wrap; gap: .6rem 1.4rem; }
+  .publications-resources a { color: var(--pub-accent); font-weight: 600; font-size: .85rem; text-decoration: none; }
+  .publication-years { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1.5rem 0 .8rem; }
+  .publication-years a { display: inline-flex; align-items: center; gap: .6rem; padding: .45rem .8rem; border: 1px solid var(--pub-line); border-radius: 6px; color: var(--pub-accent); text-decoration: none; font-weight: 700; font-size: .85rem; }
+  .publication-years span { color: var(--pub-muted); font-size: .65rem; font-weight: 400; }
+  .publication-legend { font-size: .7rem; color: var(--pub-muted); margin-bottom: 2.3rem; }
+  .publication-year { margin-bottom: 3rem; }
+  .publication-year-heading { display: flex; align-items: baseline; gap: 1rem; border-bottom: 2px solid var(--pub-accent); padding-bottom: .55rem; }
+  .publication-year-heading h2 { margin: 0; padding: 0; border: 0; color: var(--pub-accent); font-size: 2rem; letter-spacing: -.04em; scroll-margin-top: 5rem; }
+  .publication-year-heading > span { color: var(--pub-muted); font-size: .7rem; }
+  .publication-category { margin: 1.3rem 0 .25rem; font-size: .65rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: var(--pub-muted); }
+  .paper { padding: 1.2rem 0 1.3rem; border-bottom: 1px solid var(--pub-line); }
+  .paper-title { margin: 0 0 .5rem; font-size: 1rem; line-height: 1.5; font-weight: 700; }
+  .paper-authors { margin: 0 0 .4rem; font-size: .78rem; line-height: 1.75; color: var(--pub-muted); }
+  .paper-authors strong { color: var(--pub-accent); font-weight: 700; }
+  .paper-authors sup { font-size: .65em; }
+  .paper-venue { margin: 0; font-size: .78rem; line-height: 1.6; font-style: italic; }
+  .paper-links { display: flex; flex-wrap: wrap; gap: .45rem; margin-top: .75rem; }
+  .paper-links a { display: inline-flex; align-items: center; gap: .6rem; padding: .3rem .65rem; border: 1px solid var(--pub-line); border-radius: 4px; color: var(--pub-accent); background: var(--pub-tint); font-size: .65rem; font-weight: 600; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  a:focus-visible { outline: 2px solid var(--pub-accent); outline-offset: 4px; }
+  @media (max-width: 600px) {
+    .publication-year-heading h2 { font-size: 1.7rem; }
+    .paper-title { font-size: .95rem; }
+    .publication-years a { padding: .45rem .6rem; }
+  }
+}
+html[data-theme="dark"] .publications-page {
+  --pub-accent: #9bc9df;
+  --pub-muted: #b0bac2;
+  --pub-line: #3c4852;
+  --pub-tint: #25323b;
+}
