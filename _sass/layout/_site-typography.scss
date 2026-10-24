@@ -1,0 +1,47 @@
+/* A consistent reading scale across About, Publications, and CV. */
+html {
+  font-size: 16px;
+  @include breakpoint($medium) { font-size: 17px; }
+}
+
+body { line-height: 1.65; padding-bottom: 0; }
+
+// Keep the main reading column aligned on all three pages.
+@include breakpoint($large) {
+  .page { padding-right: 0; }
+}
+
+.page__title {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  letter-spacing: -.025em;
+  margin-bottom: 1rem;
+}
+
+.page__content {
+  > p { line-height: 1.75; margin-bottom: 1.15rem; }
+  > h2 {
+    font-size: 1.3rem;
+    line-height: 1.35;
+    margin-top: 2rem;
+    margin-bottom: .85rem;
+    padding-bottom: .4rem;
+  }
+  > ul { font-size: .95rem; line-height: 1.65; }
+  > ul > li { margin-bottom: .5rem; }
+}
+
+.masthead__menu { font-size: .95rem; }
+.sidebar .author__name { font-size: 1.1rem; line-height: 1.3; }
+.sidebar .author__bio { font-size: .85rem; line-height: 1.55; }
+.sidebar .author__urls li { font-size: .82rem; white-space: normal; }
+.sidebar .author__urls a { font-size: 1em; overflow-wrap: anywhere; }
+// Let long publication lists scroll without an overlapping fixed footer.
+.page__footer { position: relative; bottom: auto; }
+.page__footer-copyright { font-size: .72rem; }
+.page__footer-follow { font-size: .75rem; }
+
+@media (max-width: 600px) {
+  .page__title { font-size: 1.65rem; }
+  .page__content > h2 { font-size: 1.25rem; }
+}

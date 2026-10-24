@@ -9,7 +9,7 @@ redirect_from:
 
 Hello! I am **Migyeong Kang**, a Ph.D. candidate in Applied Artificial Intelligence at **Sungkyunkwan University (SKKU)**, advised by [Prof. Jinyoung Han](https://sites.google.com/site/jyhantop/jinyoung-han-ph-d). I expect to graduate in **February 2027**.
 
-My research focuses on using **natural language processing (NLP) to address challenges in mental health**. My work so far has centered on **mental disorder detection using deep learning and large language models**. I aim to explore broader applications in mental health, including **support and counseling**, drawing on **human–computer interaction (HCI) and human–AI alignment**.
+My research focuses on **natural language processing (NLP) for mental health**, particularly mental disorder detection using deep learning and large language models. Building on this work, I aim to develop AI systems for mental health support and counseling, with an emphasis on human–computer interaction (HCI) and human–AI alignment.
 
 I was a Visiting Scholar at Indiana University Bloomington from September 2024 to March 2025, working with [Prof. Haewoon Kwak](https://haewoon.github.io/) and [Prof. Jisun An](https://jisun.me/).
 
@@ -23,19 +23,26 @@ You can find my research on the [Publications]({{ '/publications/' | relative_ur
 
 ## Selected Publications
 
-{% assign selected_ids = "C-4,C-8,C-10,C-9" | split: "," %}
+<div class="publications-page selected-publications">
+{% assign selected_ids = "C-4,C-8,C-10" | split: "," %}
 {% for selected_id in selected_ids %}
 {% assign paper = site.data.papers | where: "id", selected_id | first %}
-<article class="publication-entry" style="margin-bottom: 1.75em;">
-  <h3 style="margin-top: 1em; margin-bottom: 0.35em;">{{ paper.title | escape }}</h3>
-  <p style="margin-bottom: 0.35em;">{{ paper.authors | escape | replace: 'Migyeong Kang', '<strong>Migyeong Kang</strong>' | replace: '**', '<sup>DOUBLESTAR</sup>' | replace: '*', '<sup>*</sup>' | replace: 'DOUBLESTAR', '**' }}</p>
-  <p style="margin-bottom: 0.5em;"><em>{{ paper.venue | escape }}</em></p>
-  <div>
+<article class="selected-publication">
+  <a class="selected-publication__image" href="{{ paper.image | relative_url }}" aria-label="View full-size figure for {{ paper.title | escape }}">
+    <img src="{{ paper.image | relative_url }}" alt="{{ paper.image_alt | escape }}" loading="lazy" decoding="async">
+  </a>
+  <div class="selected-publication__details">
+  <h3 class="paper-title">{{ paper.title | escape }}</h3>
+  <p class="paper-authors">{{ paper.authors | escape | replace: 'Migyeong Kang', '<strong>Migyeong Kang</strong>' | replace: '**', '<sup>DOUBLESTAR</sup>' | replace: '*', '<sup>*</sup>' | replace: 'DOUBLESTAR', '**' }}</p>
+  <p class="paper-venue">{{ paper.venue | escape }}</p>
+  <div class="paper-links">
     {% for link in paper.links %}
-    <a class="btn btn--inverse" href="{{ link.url }}">{{ link.label }}</a>
+    <a class="paper-link--{{ link.label | downcase }}" href="{{ link.url }}">{{ link.label }} <span aria-hidden="true">↗</span></a>
     {% endfor %}
+  </div>
   </div>
 </article>
 {% endfor %}
+</div>
 
 [View all publications]({{ '/publications/' | relative_url }})

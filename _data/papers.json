@@ -10,7 +10,9 @@
         "label": "Code",
         "url": "https://github.com/DSAIL-SKKU/FairDep-EMNLP-2026"
       }
-    ]
+    ],
+    "image": "/images/publications/fairdep-framework.png",
+    "image_alt": "Counterfactual evaluation of depression severity predictions using neutral, male, and female gender cues."
   },
   {
     "id": "C-9",
@@ -48,7 +50,9 @@
         "label": "Code",
         "url": "https://github.com/DSAIL-SKKU/SynSym-KDD-2026"
       }
-    ]
+    ],
+    "image": "/images/publications/synsym-framework.png",
+    "image_alt": "SynSym framework for symptom concept expansion, synthetic expression generation, evaluation, and symptom identification."
   },
   {
     "id": "C-7",
@@ -162,7 +166,9 @@
         "label": "Code",
         "url": "https://github.com/DSAIL-SKKU/CURE-EMNLP-2024"
       }
-    ]
+    ],
+    "image": "/images/publications/cure-framework.png",
+    "image_alt": "Overview of the CURE framework: feature extraction, model predictions, and uncertainty-aware decision fusion."
   },
   {
     "id": "C-3",
