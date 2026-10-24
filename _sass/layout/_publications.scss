@@ -8,15 +8,13 @@
   --pub-title: #17365e;
   .publications-intro { border-left: 4px solid #537eb5; padding: .3rem 0 .3rem 1rem; margin: .8rem 0 1.3rem; }
   .publications-intro > p { margin: 0 0 .7rem; line-height: 1.65; font-size: .95rem; color: var(--pub-muted); }
-  .publications-resources { display: flex; flex-wrap: wrap; gap: .65rem; }
-  .publications-resources a { display: inline-flex; align-items: center; gap: .8rem; padding: .45rem .85rem; border: 1px solid #234b7d; border-radius: 6px; background: #234b7d; color: #fff; font-weight: 600; font-size: .8rem; text-decoration: none; }
-  .publications-resources a:last-child { background: var(--pub-card); color: var(--pub-accent); border-color: var(--pub-accent); }
-  .publications-resources a:hover { box-shadow: 0 0 0 2px #7599c1; }
+  .publications-intro a { text-decoration: underline; text-underline-offset: 3px; }
   .publication-legend { font-size: .76rem; color: var(--pub-muted); margin: 0 0 1.5rem; }
   .publication-year { margin-bottom: 2.6rem; }
   .publication-year-heading { display: flex; align-items: center; gap: 1rem; }
-  .publication-year-heading::after { content: ""; flex: 1; height: 1px; background: var(--pub-line); }
-  .publication-year-heading h2 { flex-shrink: 0; margin: 0; padding: 0; border: 0; color: var(--pub-title); font-size: 1.2rem; font-weight: 600; line-height: 1.3; letter-spacing: -.01em; scroll-margin-top: 5rem; }
+  .publication-year-heading::before,
+  .publication-year-heading::after { content: ""; flex: 1 1 0; height: 1px; background: var(--pub-line); }
+  .publication-year-heading h2 { flex-shrink: 0; margin: 0; padding: 0; border: 0; color: var(--pub-title); font-size: 1.5rem; font-weight: 600; line-height: 1.3; text-align: center; letter-spacing: -.01em; scroll-margin-top: 5rem; }
   .paper-title { margin: 0 0 .4rem; font-size: 1.1rem; line-height: 1.45; font-weight: 700; color: var(--pub-title); }
   .paper-authors { margin: 0 0 .5rem; font-size: .94rem; line-height: 1.65; color: var(--pub-muted); }
   .paper-authors strong { color: var(--pub-title); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; text-decoration-color: #8ba9cc; }
