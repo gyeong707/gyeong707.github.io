@@ -14,9 +14,15 @@ and <a href="{{ '/files/Migyeong_Kang_CV.pdf' | relative_url }}">my CV</a>.</p>
 <section aria-labelledby="year-{{ year.name }}">
   <h2 id="year-{{ year.name }}">{{ year.name }}</h2>
   {% for paper in year.items %}
+  {% if paper.category == "domestic" %}
+    {% assign previous_index = forloop.index0 | minus: 1 %}
+    {% if forloop.first or year.items[previous_index].category != "domestic" %}
+    <h3>Domestic Conferences</h3>
+    {% endif %}
+  {% endif %}
   <article class="publication-entry" style="margin-bottom: 1.75em;">
     <h3 style="margin-top: 1em; margin-bottom: 0.35em;">{{ paper.title | escape }}</h3>
-    <p style="margin-bottom: 0.35em;">{{ paper.authors | escape | replace: 'Migyeong Kang', '<strong>Migyeong Kang</strong>' | replace: '**', '<sup>**</sup>' }}</p>
+    <p style="margin-bottom: 0.35em;">{{ paper.authors | escape | replace: 'Migyeong Kang', '<strong>Migyeong Kang</strong>' | replace: 'Kang, M.', '<strong>Kang, M.</strong>' | replace: '**', '<sup>DOUBLESTAR</sup>' | replace: '*', '<sup>*</sup>' | replace: 'DOUBLESTAR', '**' }}</p>
     <p style="margin-bottom: 0.5em;"><em>{{ paper.venue | escape }}</em></p>
     <div>
       {% for link in paper.links %}
