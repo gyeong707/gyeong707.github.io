@@ -19,7 +19,6 @@ author_profile: true
   <section class="publication-year" aria-labelledby="year-{{ year.name }}">
     <header class="publication-year-heading">
       <h2 id="year-{{ year.name }}">{{ year.name }}</h2>
-      <span>{{ year.items.size }} publications</span>
     </header>
     {% for paper in year.items %}
       <article class="paper" aria-labelledby="paper-{{ paper.id }}">

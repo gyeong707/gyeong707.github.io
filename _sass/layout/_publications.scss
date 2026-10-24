@@ -13,10 +13,10 @@
   .publications-resources a:last-child { background: var(--pub-card); color: var(--pub-accent); border-color: var(--pub-accent); }
   .publications-resources a:hover { box-shadow: 0 0 0 2px #7599c1; }
   .publication-legend { font-size: .76rem; color: var(--pub-muted); margin: 0 0 1.5rem; }
-  .publication-year { margin-bottom: 2.2rem; }
-  .publication-year-heading { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .55rem 1rem; background: linear-gradient(110deg, #102c50, #28578c); border-bottom: 2px solid #669cf0; border-radius: 5px; }
-  .publication-year-heading h2 { margin: 0; padding: 0; border: 0; color: #fff; font-size: 1.25rem; line-height: 1.25; letter-spacing: -.01em; scroll-margin-top: 5rem; }
-  .publication-year-heading > span { color: #e0ebfa; font-size: .76rem; white-space: nowrap; }
+  .publication-year { margin-bottom: 2.6rem; }
+  .publication-year-heading { display: flex; align-items: center; gap: 1rem; }
+  .publication-year-heading::after { content: ""; flex: 1; height: 1px; background: var(--pub-line); }
+  .publication-year-heading h2 { flex-shrink: 0; margin: 0; padding: 0; border: 0; color: var(--pub-title); font-size: 1.2rem; font-weight: 600; line-height: 1.3; letter-spacing: -.01em; scroll-margin-top: 5rem; }
   .paper-title { margin: 0 0 .4rem; font-size: 1.1rem; line-height: 1.45; font-weight: 700; color: var(--pub-title); }
   .paper-authors { margin: 0 0 .5rem; font-size: .94rem; line-height: 1.65; color: var(--pub-muted); }
   .paper-authors strong { color: var(--pub-title); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; text-decoration-color: #8ba9cc; }
@@ -27,8 +27,6 @@
   .paper-links a:hover { background: #102c50; border-color: #102c50; }
   a:focus-visible { outline: 3px solid #6296d6; outline-offset: 4px; }
   @media (max-width: 600px) {
-    .publication-year-heading { padding: .5rem .9rem; }
-    .publication-year-heading h2 { font-size: 1.2rem; }
     .paper-title { font-size: 1.05rem; }
   }
 }
@@ -66,7 +64,7 @@ html[data-theme="dark"] .publications-page .paper-badge {
   a:hover { filter: brightness(.88); }
 }
 
-/* Flat list aligned with the year banner's inner edges. */
+/* Year labels and paper titles share the same left edge. */
 .publications-page {
   .paper, .paper:nth-of-type(even) {
     background: transparent;
@@ -74,14 +72,13 @@ html[data-theme="dark"] .publications-page .paper-badge {
     border-bottom: 1px solid var(--pub-line);
     border-radius: 0;
     box-shadow: none;
-    margin: 0 1rem;
+    margin: 0;
     padding: 1.15rem 0 1.25rem;
   }
   .paper:last-child { border-bottom: 0; }
   .publication-year-heading { margin-bottom: .25rem; }
   @media (max-width: 600px) {
     .paper, .paper:nth-of-type(even) {
-      margin: 0 .9rem;
       padding: 1.2rem 0;
     }
   }
