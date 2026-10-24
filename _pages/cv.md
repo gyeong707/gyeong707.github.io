@@ -1,11 +1,13 @@
 ---
 layout: single
-title: "CV"
+title: "Curriculum Vitae"
 permalink: /cv/
 author_profile: true
 redirect_from:
   - /resume
 ---
+
+You can view my CV below or download a PDF copy.
 
 [Download CV (PDF)]({{ '/files/Migyeong_Kang_CV.pdf' | relative_url }}){: .btn .btn--primary}
 
