@@ -17,9 +17,9 @@ You can find my research on the [Publications]({{ '/publications/' | relative_ur
 
 ## News
 
-- **2026:** Two papers, **Same Symptoms, Different Severity?** and **SCENE**, were accepted to **Findings of EMNLP 2026**.
-- **September 2026:** Our SCENE research was featured in [University Journal (대학저널)](https://dhnews.co.kr/news/view/1065598902277328).
-- **2026:** **SynSym** was accepted to the **KDD 2026 Datasets and Benchmarks Track**. [Paper](https://doi.org/10.1145/3770854.3785698)
+- 🎉 **2026:** Two of our papers, *Same Symptoms, Different Severity?: Investigating Gendered Cue Effects on LLMs in Depression Severity Assessment* and *SCENE: A Scenario Completion Benchmark for Measuring Social Bias in Large Language Models*, have been accepted to **Findings of EMNLP 2026**!
+- 🎉 **September 2026:** Our paper, *SCENE: A Scenario Completion Benchmark for Measuring Social Bias in Large Language Models*, was featured in [University Journal](https://dhnews.co.kr/news/view/1065598902277328). Happy to see our research reaching a wider audience!
+- 🎉 **2026:** Excited to share that *SynSym: A Synthetic Data Generation Framework for Psychiatric Symptom Identification* has been accepted to the **KDD 2026 Datasets and Benchmarks Track**! [Read the paper](https://doi.org/10.1145/3770854.3785698).
 
 ## Selected Publications
 
