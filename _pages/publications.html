@@ -8,7 +8,7 @@ author_profile: true
 {% assign years = site.data.papers | group_by: "year" %}
 <div class="publications-page">
   <div class="publications-intro">
-    <p>You can also find my work on <a href="{{ site.author.googlescholar }}">Google Scholar</a> or <a href="{{ '/files/Migyeong_Kang_CV.pdf' | relative_url }}">download my CV</a>.</p>
+    <p>You can also find my work on <a href="{{ site.author.googlescholar }}">Google Scholar</a> or <a href="{{ '/files/Migyeong_Kang_CV.pdf' | relative_url }}?v={{ site.time | date: '%s' }}">download my CV</a>.</p>
   </div>
   <p class="publication-legend">* Corresponding author · ** Equal contribution</p>
   {% for year in years %}
