@@ -80,8 +80,8 @@
     "id": "D-9",
     "year": 2026,
     "title": "ACon-Net: Disentangling Authorship and Cross-modal Consistency for Multimodal Misinformation Detection",
-    "authors": "Saejin Ju, Goun Choi, Migyeong Kang, Youjin Lee, S. Shyam Sundar, and Jinyoung Han",
-    "venue": "한국 인공지능 학술대회, Jeju, September 29–October 2, 2026",
+    "authors": "Saejin Ju, Goun Choi, Migyeong Kang, Youjin Lee, S. Shyam Sundar, and Jinyoung Han*",
+    "venue": "The 7th Korea Artificial Intelligence Conference (KoreaAI 2026)",
     "category": "domestic",
     "links": []
   },
@@ -115,8 +115,8 @@
     "id": "D-8",
     "year": 2025,
     "title": "Cognitive Distortion Detection Based on Cognitive Structure Signatures",
-    "authors": "Kim, M., Kang, M., Sundar, S. S., & Han, J.",
-    "venue": "The Korean Institute of Communications and Information Sciences (KICS 2025)",
+    "authors": "Minseok Kim, Migyeong Kang, S. Shyam Sundar, and Jinyoung Han*",
+    "venue": "The Korean Institute of Communications and Information Sciences Fall Conference (KICS 2025)",
     "category": "domestic",
     "links": []
   },
@@ -124,8 +124,8 @@
     "id": "D-7",
     "year": 2025,
     "title": "Debiasing Gender Bias in Large Language Models for Depression Detection",
-    "authors": "Yang, S., Kang, M., Sundar, S. S., & Han, J.",
-    "venue": "The Korean Institute of Communications and Information Sciences (KICS 2025)",
+    "authors": "Sihyeon Yang, Migyeong Kang, S. Shyam Sundar, and Jinyoung Han*",
+    "venue": "The Korean Institute of Communications and Information Sciences Fall Conference (KICS 2025)",
     "category": "domestic",
     "links": []
   },
@@ -133,8 +133,8 @@
     "id": "D-6",
     "year": 2025,
     "title": "A Study on an LLM-Based Conversational Chatbot for PHQ-9-Based Depression Self-Assessment",
-    "authors": "Ju, S., Kang, M., Kim, D., Sundar, S. S., & Han, J.",
-    "venue": "The Korean Institute of Communications and Information Sciences (KICS 2025)",
+    "authors": "Saejin Ju, Migyeong Kang, Doha Kim, S. Shyam Sundar, and Jinyoung Han*",
+    "venue": "The Korean Institute of Communications and Information Sciences Fall Conference (KICS 2025)",
     "category": "domestic",
     "links": []
   },
@@ -142,7 +142,7 @@
     "id": "D-5",
     "year": 2025,
     "title": "A Comparative Analysis of Reinforcement Learning Algorithms for Human Preference Alignment in Large Language Models",
-    "authors": "Kang, M., Cho, M., Ju, S., Yang, S., Kang, C., Won, H., Jeong, S., Choi, G., Han, J.*",
+    "authors": "Migyeong Kang, Minhan Cho, Saejin Ju, Sihyeon Yang, Chaewon Kang, Hyunseon Won, Seoyoon Jeong, Goun Choi, and Jinyoung Han*",
     "venue": "Korea Computer Congress (KCC 2025)",
     "category": "domestic",
     "links": []
@@ -181,7 +181,7 @@
     "id": "D-4",
     "year": 2024,
     "title": "Hey GPT, Can You Tell What's Stressing Me Out? Comparing LLM's Ability to Detect Stress with Traditional ML Models",
-    "authors": "Choi, G.**, Kang, M., Han, J.*, and S. Shyam Sundar",
+    "authors": "Goun Choi**, Migyeong Kang, Jinyoung Han*, and S. Shyam Sundar",
     "venue": "The Korean Artificial Intelligence Association Fall Conference (KAIA 2024)",
     "category": "domestic",
     "links": []
@@ -216,7 +216,7 @@
     "id": "D-3",
     "year": 2023,
     "title": "Performance Analysis on Generative Adversarial Models based on Network Data",
-    "authors": "Kim, M.**, Kang, M., Park, E., Pack, S., & Han, J.*",
+    "authors": "Minji Kim**, Migyeong Kang, Eunil Park, Sangheon Pack, and Jinyoung Han*",
     "venue": "The 33rd Joint Conference on Communications and Information (JCCI 2023)",
     "category": "domestic",
     "links": []
@@ -225,8 +225,8 @@
     "id": "D-2",
     "year": 2023,
     "title": "Toward Natural and Intelligible Speech Synthesis: An Empirical Study on Transfer Learning",
-    "authors": "Kang, C.**, Yoon, J., Lee, D., Kang, M., Lim, S., Jung, J., Son, Sejung, Han, J.*",
-    "venue": "The Korean Institute of Broadcast and Media Engineers Conference Proceedings (KIBME 2023), July",
+    "authors": "Chaewon Kang**, Jeewoo Yoon, Daeun Lee, Migyeong Kang, Seohyun Lim, Juho Jung, Sejung Son, and Jinyoung Han*",
+    "venue": "The Korean Institute of Broadcast and Media Engineers Conference Proceedings (KIBME 2023)",
     "category": "domestic",
     "links": []
   },
@@ -251,7 +251,7 @@
     "id": "D-1",
     "year": 2022,
     "title": "Developing Depression Detection Model using Social Media Video Data",
-    "authors": "Min, K.**, Kang, M., Yoon, J., Lee, D., & Han, J.*",
+    "authors": "Kyungeun Min**, Migyeong Kang, Jeewoo Yoon, Daeun Lee, and Jinyoung Han*",
     "venue": "The 32nd Joint Conference on Communications and Information (JCCI 2022)",
     "category": "domestic",
     "links": []

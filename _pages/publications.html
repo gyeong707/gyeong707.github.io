@@ -8,17 +8,12 @@ author_profile: true
 {% assign years = site.data.papers | group_by: "year" %}
 <div class="publications-page">
   <div class="publications-intro">
-    <p>Research on trustworthy AI, mental health, and human–AI interaction.</p>
+    <p>You can also find my work on Google Scholar or in my CV.</p>
     <div class="publications-resources">
       <a href="{{ site.author.googlescholar }}">Google Scholar <span aria-hidden="true">↗</span></a>
       <a href="{{ '/files/Migyeong_Kang_CV.pdf' | relative_url }}">Download CV <span aria-hidden="true">↗</span></a>
     </div>
   </div>
-  <nav class="publication-years" aria-label="Browse publications by year">
-    {% for year in years %}
-    <a href="#year-{{ year.name }}">{{ year.name }} <span>{{ year.items.size }}</span></a>
-    {% endfor %}
-  </nav>
   <p class="publication-legend">* Corresponding author · ** Equal contribution</p>
   {% for year in years %}
   <section class="publication-year" aria-labelledby="year-{{ year.name }}">
@@ -26,22 +21,18 @@ author_profile: true
       <h2 id="year-{{ year.name }}">{{ year.name }}</h2>
       <span>{{ year.items.size }} publications</span>
     </header>
-    {% assign domestic_started = false %}
     {% for paper in year.items %}
-      {% if paper.category == "domestic" and domestic_started == false %}
-        <h3 class="publication-category">Domestic Conferences</h3>
-        {% assign domestic_started = true %}
-      {% elsif forloop.first %}
-        <h3 class="publication-category">International Conferences &amp; Journals</h3>
-      {% endif %}
-      <article class="paper{% if paper.category == 'domestic' %} paper--domestic{% endif %}" aria-labelledby="paper-{{ paper.id }}">
-        <h4 class="paper-title" id="paper-{{ paper.id }}">{{ paper.title | escape }}</h4>
+      <article class="paper" aria-labelledby="paper-{{ paper.id }}">
+        <h3 class="paper-title" id="paper-{{ paper.id }}">{{ paper.title | escape }}</h3>
         <p class="paper-authors">{{ paper.authors | escape | replace: 'Migyeong Kang', '<strong>Migyeong Kang</strong>' | replace: 'Kang, M.', '<strong>Kang, M.</strong>' | replace: '**', '<sup>DOUBLESTAR</sup>' | replace: '*', '<sup>*</sup>' | replace: 'DOUBLESTAR', '**' }}</p>
         <p class="paper-venue">{{ paper.venue | escape }}</p>
+        {% if paper.category == "domestic" %}
+        <div class="paper-links"><span class="paper-badge">Domestic</span></div>
+        {% endif %}
         {% if paper.links.size > 0 %}
         <div class="paper-links">
           {% for link in paper.links %}
-          <a href="{{ link.url }}" aria-label="{{ link.label }} for {{ paper.title | escape }}">{{ link.label }} <span aria-hidden="true">↗</span></a>
+          <a class="paper-link--{{ link.label | downcase }}" href="{{ link.url }}" aria-label="{{ link.label }} for {{ paper.title | escape }}">{{ link.label }} <span aria-hidden="true">↗</span></a>
           {% endfor %}
         </div>
         {% endif %}
