@@ -80,22 +80,20 @@
   /* No need to repeat pointer-events and cursor here */
 }
 
-/* Placeholder for the forthcoming Korean version, beside the theme toggle. */
+/* Language selection control, sized to match the adjacent theme icon. */
 .greedy-nav .visible-links #language-switch a {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: .2rem;
   margin-left: .15rem;
-  min-width: 3rem;
+  width: 25px;
   padding: .5rem 0;
   font-size: .72rem;
+  font-weight: 700;
   line-height: 1.5;
   letter-spacing: .025em;
-  cursor: default;
+  cursor: pointer;
 
   &::before { display: none; }
   &:focus-visible { outline: 2px solid var(--global-link-color); outline-offset: 3px; border-radius: 3px; }
-  .language-switch__current { font-weight: 700; }
-  .language-switch__pending, .language-switch__separator { opacity: .55; }
 }
