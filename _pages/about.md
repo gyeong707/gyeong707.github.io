@@ -1,4 +1,6 @@
 ---
+lang: en
+translation_url: /ko/
 permalink: /
 title: "About Me"
 author_profile: true
@@ -23,26 +25,6 @@ You can find my research on the [Publications]({{ '/publications/' | relative_ur
 
 ## Selected Publications
 
-<div class="publications-page selected-publications">
-{% assign selected_ids = "C-4,C-8,C-10" | split: "," %}
-{% for selected_id in selected_ids %}
-{% assign paper = site.data.papers | where: "id", selected_id | first %}
-<article class="selected-publication">
-  <a class="selected-publication__image" href="{{ paper.image | relative_url }}" aria-label="View full-size figure for {{ paper.title | escape }}">
-    <img src="{{ paper.image | relative_url }}" alt="{{ paper.image_alt | escape }}" loading="lazy" decoding="async">
-  </a>
-  <div class="selected-publication__details">
-  <h3 class="paper-title">{{ paper.title | escape }}</h3>
-  <p class="paper-authors">{{ paper.authors | escape | replace: 'Migyeong Kang', '<strong>Migyeong Kang</strong>' | replace: '**', '<sup>DOUBLESTAR</sup>' | replace: '*', '<sup>*</sup>' | replace: 'DOUBLESTAR', '**' }}</p>
-  <p class="paper-venue">{{ paper.venue | escape }}</p>
-  <div class="paper-links">
-    {% for link in paper.links %}
-    <a class="paper-link--{{ link.label | downcase }}" href="{{ link.url }}">{{ link.label }} <span aria-hidden="true">↗</span></a>
-    {% endfor %}
-  </div>
-  </div>
-</article>
-{% endfor %}
-</div>
+{% include selected-publications.html %}
 
 [View all publications]({{ '/publications/' | relative_url }})

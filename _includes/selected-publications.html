@@ -1,0 +1,21 @@
+<div class="publications-page selected-publications">
+{% assign selected_ids = "C-4,C-8,C-10" | split: "," %}
+{% for selected_id in selected_ids %}
+{% assign paper = site.data.papers | where: "id", selected_id | first %}
+<article class="selected-publication">
+  <a class="selected-publication__image" href="{{ paper.image | relative_url }}" aria-label="{% if page.lang == 'ko' %}그림 크게 보기: {% else %}View full-size figure for {% endif %}{% if page.lang == 'ko' %}{{ paper.title_ko | default: paper.title | escape }}{% else %}{{ paper.title | escape }}{% endif %}">
+    <img src="{{ paper.image | relative_url }}" alt="{{ paper.image_alt | escape }}" loading="lazy" decoding="async">
+  </a>
+  <div class="selected-publication__details">
+  <h3 class="paper-title">{% if page.lang == 'ko' %}{{ paper.title_ko | default: paper.title | escape }}{% else %}{{ paper.title | escape }}{% endif %}</h3>
+  <p class="paper-authors">{{ paper.authors | escape | replace: 'Migyeong Kang', '<strong>Migyeong Kang</strong>' | replace: '**', '<sup>DOUBLESTAR</sup>' | replace: '*', '<sup>*</sup>' | replace: 'DOUBLESTAR', '**' }}</p>
+  <p class="paper-venue">{{ paper.venue | escape }}</p>
+  <div class="paper-links">
+    {% for link in paper.links %}
+    <a class="paper-link--{{ link.label | downcase }}" href="{{ link.url }}">{% if page.lang == 'ko' %}{% case link.label %}{% when 'Code' %}코드{% when 'Web' %}웹사이트{% when 'News' %}기사{% when 'Paper' %}논문{% else %}{{ link.label }}{% endcase %}{% else %}{{ link.label }}{% endif %} <span aria-hidden="true">↗</span></a>
+    {% endfor %}
+  </div>
+  </div>
+</article>
+{% endfor %}
+</div>

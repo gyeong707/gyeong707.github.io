@@ -45,3 +45,9 @@ body { line-height: 1.65; padding-bottom: 0; }
   .page__title { font-size: 1.65rem; }
   .page__content > h2 { font-size: 1.25rem; }
 }
+
+// Keep Korean words together while allowing long URLs and names to wrap.
+html[lang="ko"] {
+  .page__content, .archive, .sidebar { word-break: keep-all; overflow-wrap: anywhere; }
+  .paper-title { line-height: 1.5; }
+}

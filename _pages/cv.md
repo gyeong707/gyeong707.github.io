@@ -1,4 +1,6 @@
 ---
+lang: en
+translation_url: /ko/cv/
 layout: single
 title: "Curriculum Vitae"
 permalink: /cv/

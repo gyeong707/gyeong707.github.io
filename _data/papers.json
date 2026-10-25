@@ -12,7 +12,8 @@
       }
     ],
     "image": "/images/publications/fairdep-framework.png",
-    "image_alt": "Counterfactual evaluation of depression severity predictions using neutral, male, and female gender cues."
+    "image_alt": "Counterfactual evaluation of depression severity predictions using neutral, male, and female gender cues.",
+    "title_ko": "같은 증상, 다른 중증도?: 우울 중증도 평가에서 성별 단서가 대규모 언어모델에 미치는 영향"
   },
   {
     "id": "C-9",
@@ -33,7 +34,8 @@
         "label": "News",
         "url": "https://dhnews.co.kr/news/view/1065598902277328"
       }
-    ]
+    ],
+    "title_ko": "SCENE: 대규모 언어모델의 사회적 편향 측정을 위한 시나리오 완성 벤치마크"
   },
   {
     "id": "C-8",
@@ -52,7 +54,8 @@
       }
     ],
     "image": "/images/publications/synsym-framework.png",
-    "image_alt": "SynSym framework for symptom concept expansion, synthetic expression generation, evaluation, and symptom identification."
+    "image_alt": "SynSym framework for symptom concept expansion, synthetic expression generation, evaluation, and symptom identification.",
+    "title_ko": "SynSym: 정신건강 증상 식별을 위한 합성 데이터 생성 프레임워크"
   },
   {
     "id": "C-7",
@@ -65,7 +68,8 @@
         "label": "DOI",
         "url": "https://doi.org/10.18653/v1/2026.c3nlp-1.2"
       }
-    ]
+    ],
+    "title_ko": "동양에서는 신체적, 서양에서는 심리적?: 임상적 근거에 기반한 대규모 언어모델의 문화 간 우울 증상 평가"
   },
   {
     "id": "C-6",
@@ -78,7 +82,8 @@
         "label": "DOI",
         "url": "https://doi.org/10.1145/3772363.3799023"
       }
-    ]
+    ],
+    "title_ko": "대화형 정신건강 평가를 위한 대규모 언어모델 활용: 대화 맥락에 대한 반응성과 사용자 주도권의 역할 검증"
   },
   {
     "id": "D-9",
@@ -87,7 +92,8 @@
     "authors": "Saejin Ju, Goun Choi, Migyeong Kang, Youjin Lee, S. Shyam Sundar, and Jinyoung Han*",
     "venue": "The 7th Korea Artificial Intelligence Conference (KoreaAI 2026)",
     "category": "domestic",
-    "links": []
+    "links": [],
+    "title_ko": "ACon-Net: 멀티모달 허위정보 탐지를 위한 작성 주체와 모달리티 간 일관성의 분리"
   },
   {
     "id": "C-5",
@@ -100,7 +106,8 @@
         "label": "DOI",
         "url": "https://doi.org/10.1145/3706599.3719735"
       }
-    ]
+    ],
+    "title_ko": "Show Your Mind: 증상 기반 근거를 제시하는 AI 정신건강 평가 시스템의 사용자 경험 탐색"
   },
   {
     "id": "J-2",
@@ -113,7 +120,8 @@
         "label": "Paper",
         "url": "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART003265822"
       }
-    ]
+    ],
+    "title_ko": "CEO의 교육 수준이 소프트웨어 스타트업 성과에 미치는 영향에 대한 메타프런티어 분석"
   },
   {
     "id": "D-8",
@@ -122,7 +130,8 @@
     "authors": "Minseok Kim, Migyeong Kang, S. Shyam Sundar, and Jinyoung Han*",
     "venue": "The Korean Institute of Communications and Information Sciences Fall Conference (KICS 2025)",
     "category": "domestic",
-    "links": []
+    "links": [],
+    "title_ko": "인지 구조 특성에 기반한 인지 왜곡 탐지"
   },
   {
     "id": "D-7",
@@ -131,7 +140,8 @@
     "authors": "Sihyeon Yang, Migyeong Kang, S. Shyam Sundar, and Jinyoung Han*",
     "venue": "The Korean Institute of Communications and Information Sciences Fall Conference (KICS 2025)",
     "category": "domestic",
-    "links": []
+    "links": [],
+    "title_ko": "우울 탐지를 위한 대규모 언어모델의 성별 편향 완화"
   },
   {
     "id": "D-6",
@@ -140,7 +150,8 @@
     "authors": "Saejin Ju, Migyeong Kang, Doha Kim, S. Shyam Sundar, and Jinyoung Han*",
     "venue": "The Korean Institute of Communications and Information Sciences Fall Conference (KICS 2025)",
     "category": "domestic",
-    "links": []
+    "links": [],
+    "title_ko": "PHQ-9 기반 우울 자가평가를 위한 대규모 언어모델 기반 대화형 챗봇 연구"
   },
   {
     "id": "D-5",
@@ -149,7 +160,8 @@
     "authors": "Migyeong Kang, Minhan Cho, Saejin Ju, Sihyeon Yang, Chaewon Kang, Hyunseon Won, Seoyoon Jeong, Goun Choi, and Jinyoung Han*",
     "venue": "Korea Computer Congress (KCC 2025)",
     "category": "domestic",
-    "links": []
+    "links": [],
+    "title_ko": "대규모 언어모델의 인간 선호 정렬을 위한 강화학습 알고리즘 비교 분석"
   },
   {
     "id": "C-4",
@@ -168,7 +180,8 @@
       }
     ],
     "image": "/images/publications/cure-framework.png",
-    "image_alt": "Overview of the CURE framework: feature extraction, model predictions, and uncertainty-aware decision fusion."
+    "image_alt": "Overview of the CURE framework: feature extraction, model predictions, and uncertainty-aware decision fusion.",
+    "title_ko": "CURE: 맥락과 불확실성을 고려한 정신질환 탐지"
   },
   {
     "id": "C-3",
@@ -181,7 +194,8 @@
         "label": "DOI",
         "url": "https://doi.org/10.1145/3643832.3661437"
       }
-    ]
+    ],
+    "title_ko": "포스터: ISOML: 신규 네트워크 트래픽 예측을 위한 서비스 간 온라인 메타학습"
   },
   {
     "id": "D-4",
@@ -190,7 +204,8 @@
     "authors": "Goun Choi**, Migyeong Kang, Jinyoung Han*, and S. Shyam Sundar",
     "venue": "The Korean Artificial Intelligence Association Fall Conference (KAIA 2024)",
     "category": "domestic",
-    "links": []
+    "links": [],
+    "title_ko": "GPT, 내 스트레스의 원인을 알려줄래?: 대규모 언어모델과 기존 머신러닝 모델의 스트레스 탐지 능력 비교"
   },
   {
     "id": "C-2",
@@ -203,7 +218,8 @@
         "label": "DOI",
         "url": "https://doi.org/10.1109/ICTC58733.2023.10393857"
       }
-    ]
+    ],
+    "title_ko": "IP2Vec 임베딩을 활용한 네트워크 데이터 생성"
   },
   {
     "id": "J-1",
@@ -216,7 +232,8 @@
         "label": "DOI",
         "url": "https://doi.org/10.1057/s41599-023-02313-6"
       }
-    ]
+    ],
+    "title_ko": "시청각 특징을 활용한 브이로그의 우울 탐지"
   },
   {
     "id": "D-3",
@@ -225,7 +242,8 @@
     "authors": "Minji Kim**, Migyeong Kang, Eunil Park, Sangheon Pack, and Jinyoung Han*",
     "venue": "The 33rd Joint Conference on Communications and Information (JCCI 2023)",
     "category": "domestic",
-    "links": []
+    "links": [],
+    "title_ko": "네트워크 데이터를 활용한 생성적 적대 모델의 성능 분석"
   },
   {
     "id": "D-2",
@@ -234,7 +252,8 @@
     "authors": "Chaewon Kang**, Jeewoo Yoon, Daeun Lee, Migyeong Kang, Seohyun Lim, Juho Jung, Sejung Son, and Jinyoung Han*",
     "venue": "The Korean Institute of Broadcast and Media Engineers Conference Proceedings (KIBME 2023)",
     "category": "domestic",
-    "links": []
+    "links": [],
+    "title_ko": "자연스럽고 명료한 음성 합성을 향하여: 전이학습에 관한 실증 연구"
   },
   {
     "id": "C-1",
@@ -251,7 +270,8 @@
         "label": "Code",
         "url": "https://github.com/DSAIL-SKKU/Detecting_Suicidality_Contextual_GNN_CLPsych_2022"
       }
-    ]
+    ],
+    "title_ko": "맥락 기반 그래프 신경망을 활용한 자살 위험 탐지"
   },
   {
     "id": "D-1",
@@ -260,6 +280,7 @@
     "authors": "Kyungeun Min**, Migyeong Kang, Jeewoo Yoon, Daeun Lee, and Jinyoung Han*",
     "venue": "The 32nd Joint Conference on Communications and Information (JCCI 2022)",
     "category": "domestic",
-    "links": []
+    "links": [],
+    "title_ko": "소셜 미디어 영상 데이터를 활용한 우울 탐지 모델 개발"
   }
 ]

@@ -6,3 +6,11 @@ main:
     url: /publications/
   - title: "CV"
     url: /cv/
+
+ko:
+  - title: "소개"
+    url: /ko/
+  - title: "논문"
+    url: /ko/publications/
+  - title: "CV"
+    url: /ko/cv/

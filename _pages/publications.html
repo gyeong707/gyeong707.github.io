@@ -1,38 +1,10 @@
 ---
+lang: en
+translation_url: /ko/publications/
 layout: archive
 title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
 
-{% assign years = site.data.papers | group_by: "year" %}
-<div class="publications-page">
-  <div class="publications-intro">
-    <p>You can also find my work on <a href="{{ site.author.googlescholar }}">Google Scholar</a> or <a href="{{ '/files/Migyeong_Kang_CV.pdf' | relative_url }}?v={{ site.time | date: '%s' }}">download my CV</a>.</p>
-  </div>
-  <p class="publication-legend">* Corresponding author · ** Equal contribution</p>
-  {% for year in years %}
-  <section class="publication-year" aria-labelledby="year-{{ year.name }}">
-    <header class="publication-year-heading">
-      <h2 id="year-{{ year.name }}">{{ year.name }}</h2>
-    </header>
-    {% for paper in year.items %}
-      <article class="paper" aria-labelledby="paper-{{ paper.id }}">
-        <h3 class="paper-title" id="paper-{{ paper.id }}">{{ paper.title | escape }}</h3>
-        <p class="paper-authors">{{ paper.authors | escape | replace: 'Migyeong Kang', '<strong>Migyeong Kang</strong>' | replace: 'Kang, M.', '<strong>Kang, M.</strong>' | replace: '**', '<sup>DOUBLESTAR</sup>' | replace: '*', '<sup>*</sup>' | replace: 'DOUBLESTAR', '**' }}</p>
-        <p class="paper-venue">{{ paper.venue | escape }}</p>
-        {% if paper.category == "domestic" %}
-        <div class="paper-links"><span class="paper-badge">Domestic</span></div>
-        {% endif %}
-        {% if paper.links.size > 0 %}
-        <div class="paper-links">
-          {% for link in paper.links %}
-          <a class="paper-link--{{ link.label | downcase }}" href="{{ link.url }}" aria-label="{{ link.label }} for {{ paper.title | escape }}">{{ link.label }} <span aria-hidden="true">↗</span></a>
-          {% endfor %}
-        </div>
-        {% endif %}
-      </article>
-    {% endfor %}
-  </section>
-  {% endfor %}
-</div>
+{% include publications-list.html %}

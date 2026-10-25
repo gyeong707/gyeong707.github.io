@@ -1,4 +1,11 @@
 {% include base_path %}
+{% assign current_language = page.lang | default: 'en' %}
+{% assign navigation = site.data.navigation.main %}
+{% assign home_url = '/' %}
+{% if current_language == 'ko' %}
+  {% assign navigation = site.data.navigation.ko %}
+  {% assign home_url = '/ko/' %}
+{% endif %}
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
@@ -6,15 +13,15 @@
         <button><span class="navicon"></span></button>
         <ul class="visible-links">
           <li class="masthead__menu-item masthead__menu-item--lg persist {% if page.url == '/' or page.url == '/index.html' %}selected{% endif %}">
-            <a href="{{ base_path }}/">{{ site.title }}</a>
+            <a href="{{ home_url | relative_url }}">{{ site.title }}</a>
           </li>
-          {% for link in site.data.navigation.main %}
+          {% for link in navigation %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
             {% else %}
               {% assign domain = base_path %}
             {% endif %}
-            <li class="masthead__menu-item {% if page.url contains link.url and link.url != '/' %}selected{% endif %}">
+            <li class="masthead__menu-item {% if page.url == link.url %}selected{% endif %}">
               <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
             </li>
           {% endfor %}
@@ -22,7 +29,11 @@
             <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
           </li>
           <li id="language-switch" class="masthead__menu-item persist">
-            <a role="button" tabindex="0" aria-label="Select Korean" title="Select Korean">EN</a>
+            {% if current_language == 'ko' %}
+            <a href="{{ page.translation_url | default: '/' | relative_url }}" hreflang="en" aria-label="Switch to English" title="Switch to English">KO</a>
+            {% else %}
+            <a href="{{ page.translation_url | default: '/ko/' | relative_url }}" hreflang="ko" aria-label="한국어로 보기" title="한국어로 보기">EN</a>
+            {% endif %}
           </li>
         </ul>
         <ul class="hidden-links hidden"></ul>
