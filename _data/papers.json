@@ -42,7 +42,7 @@
     "year": 2026,
     "title": "SynSym: A Synthetic Data Generation Framework for Psychiatric Symptom Identification",
     "authors": "Migyeong Kang, Jihyun Kim, Hyolim Jeon, Sunwoo Hwang, Jihyun An, Yonghoon Kim, Haewoon Kwak, Jisun An, and Jinyoung Han*",
-    "venue": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD 2026) (Datasets and Benchmarks Track)",
+    "venue": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD 2026)",
     "links": [
       {
         "label": "DOI",
